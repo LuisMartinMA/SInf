@@ -1,0 +1,54 @@
+/*GLOBALES*/
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.block {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*DE LA API**/
+
+.texto-centrado {
+    text-align: center;
+}
+
+.caja-mensajeria {
+    width: 30rem;
+    height: 3rem;
+    border: 2px;
+    border-style: solid;
+}
+
+.error {
+    background-color: #FAB1A2;
+    color: red;
+    border-color: red;
+}
+
+.envio {
+    background-color: #AFFC6E;
+    color: #6FE50D;
+    border-color: #6FE50D;
+}
+
+.deshabilitado {
+    cursor: not-allowed;
+    opacity: 50%;
+}

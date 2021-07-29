@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/app.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="contenedor" class="contenedor">
+        <div class="texto-centrado">
+            <h1>Envio de Documentacion</h1>
+            <img class="block" src="./src/img/images (5).png" alt="imagen de fondo" />
+        </div>
+        <div class="block texto-centrado" id="mensajeria"></div>
+        <div class="formulario" id="formulario">
+            <form class="texto-centrado">
+                <label for="dni">DNI :</label>
+                <input name="dni" class="block" id="documento" type="text" />
+            </form>
+            <form class="texto-centrado">
+                <label for="archivo">ARCHIVO</label>
+                <input name="archivo" class="block" id="archivo" type="file" onchange="return validarArchivo()" />
+            </form>
+            <form class="texto-centrado">
+                <button id="boton">ENVIAR</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./src/js/apps.js"></script>
+</body>
+
+</html>
